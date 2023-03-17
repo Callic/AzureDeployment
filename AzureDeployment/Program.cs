@@ -10,7 +10,10 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/api/v1", "My app V1");
+});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
