@@ -12,7 +12,7 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/api/v1/swagger.json", "My app V1");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My app V1");
 });
 
 // Configure the HTTP request pipeline.
